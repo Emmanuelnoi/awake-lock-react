@@ -1,0 +1,44 @@
+{
+  "app": {
+    "title": "Awake Lock - 保持屏幕常亮",
+    "description": "通过智能唤醒锁定管理防止设备进入睡眠状态",
+    "tagline": "保持屏幕常亮",
+    "subtitle": "通过智能唤醒锁定管理防止设备进入睡眠状态"
+  },
+  "header": {
+    "title": "Awake Lock",
+    "settings": "设置",
+    "about": "关于"
+  },
+  "wakeLock": {
+    "title": "唤醒锁定控制",
+    "description": "防止设备进入睡眠状态或关闭屏幕",
+    "active": "活跃",
+    "inactive": "非活跃",
+    "screenAwake": "屏幕将保持常亮",
+    "sleepDisabled": "睡眠防护已禁用"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "switchToDark": "切换到深色模式",
+    "switchToLight": "切换到浅色模式",
+    "switchToSystem": "切换到系统模式"
+  },
+  "settings": {
+    "title": "设置",
+    "description": "配置唤醒锁定偏好和行为",
+    "language": {
+      "title": "语言",
+      "description": "选择您偏好的语言",
+      "select": "选择语言"
+    }
+  },
+  "common": {
+    "close": "关闭",
+    "cancel": "取消",
+    "save": "保存",
+    "loading": "加载中..."
+  }
+}

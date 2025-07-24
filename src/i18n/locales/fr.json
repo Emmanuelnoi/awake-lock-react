@@ -1,0 +1,50 @@
+{
+  "app": {
+    "title": "Awake Lock - Gardez Votre Écran Éveillé",
+    "description": "Empêchez votre appareil de se mettre en veille avec une gestion intelligente du verrouillage de veille",
+    "tagline": "Gardez Votre Écran Éveillé",
+    "subtitle": "Empêchez votre appareil de se mettre en veille avec une gestion intelligente du verrouillage de veille"
+  },
+  "header": {
+    "title": "Awake Lock",
+    "settings": "Paramètres",
+    "about": "À propos"
+  },
+  "wakeLock": {
+    "title": "Contrôle du Verrouillage de Veille",
+    "description": "Empêchez votre appareil de se mettre en veille ou d'éteindre l'écran",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "screenAwake": "L'écran restera éveillé",
+    "sleepDisabled": "Prévention du sommeil désactivée",
+    "toggleDescription": "Basculer pour empêcher votre appareil de dormir",
+    "usingStrategy": "Utilisation de la stratégie de verrouillage de veille {{strategy}}"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "switchToDark": "Passer au mode sombre",
+    "switchToLight": "Passer au mode clair",
+    "switchToSystem": "Passer au mode système"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "description": "Configurez les préférences et le comportement du verrouillage de veille",
+    "language": {
+      "title": "Langue",
+      "description": "Choisissez votre langue préférée",
+      "select": "Sélectionner la langue"
+    }
+  },
+  "about": {
+    "title": "À propos d'Awake Lock",
+    "description": "Gardez votre appareil éveillé avec une gestion intelligente du verrouillage de veille"
+  },
+  "common": {
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "loading": "Chargement..."
+  }
+}

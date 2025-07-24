@@ -1,0 +1,229 @@
+{
+  "app": {
+    "title": "Awake Lock - Mantieni il Tuo Schermo Sveglio",
+    "description": "Impedisci al tuo dispositivo di addormentarsi con la gestione intelligente del wake lock",
+    "tagline": "Mantieni il Tuo Schermo Sveglio",
+    "subtitle": "Impedisci al tuo dispositivo di addormentarsi con la gestione intelligente del wake lock"
+  },
+  "header": {
+    "title": "Awake Lock",
+    "settings": "Impostazioni",
+    "about": "Informazioni"
+  },
+  "wakeLock": {
+    "title": "Controllo Wake Lock",
+    "description": "Impedisci al tuo dispositivo di addormentarsi o spegnere lo schermo",
+    "active": "Attivo",
+    "inactive": "Inattivo",
+    "screenAwake": "Lo schermo rimarrà acceso",
+    "sleepDisabled": "Prevenzione sonno disabilitata",
+    "toggleDescription": "Attiva per impedire al tuo dispositivo di addormentarsi",
+    "usingStrategy": "Utilizzando la strategia wake lock {{strategy}}",
+    "wakeLockTypes": {
+      "title": "Tipo di Wake Lock",
+      "screen": "Solo Schermo",
+      "system": "Risveglio Sistema",
+      "screenDescription": "Il wake lock dello schermo impedisce al display di spegnersi.",
+      "systemDescription": "Il wake lock del sistema impedisce all'intero dispositivo di addormentarsi."
+    },
+    "session": {
+      "current": "Sessione Corrente",
+      "total": "Sessioni Totali",
+      "duration": "{{minutes}}m {{seconds}}s"
+    },
+    "battery": {
+      "level": "Livello Batteria: {{level}}%",
+      "warning": "I wake lock potrebbero scaricare la batteria più velocemente"
+    },
+    "details": {
+      "show": "Mostra Dettagli",
+      "hide": "Nascondi Dettagli",
+      "title": "Dettagli Tecnici",
+      "description": "Informazioni avanzate sull'implementazione del wake lock",
+      "status": "Stato",
+      "strategy": "Strategia",
+      "type": "Tipo",
+      "browserSupport": "Supporto Browser",
+      "supported": "Supportato",
+      "notSupported": "Non Supportato",
+      "nativeApi": "API Nativa",
+      "none": "Nessuno",
+      "sessionStats": "Statistiche Sessione",
+      "totalTime": "Tempo Totale",
+      "averageSession": "Sessione Media"
+    },
+    "errors": {
+      "notSupported": "Wake Lock Non Supportato",
+      "compatibilityIssue": "Il tuo browser o dispositivo non supporta la funzionalità wake lock.",
+      "tryDifferentBrowser": "Questa funzionalità richiede un browser moderno con supporto Wake Lock API. Prova a utilizzare Chrome, Firefox o Safari su un dispositivo supportato.",
+      "failed": "Richiesta wake lock fallita",
+      "releaseFailed": "Rilascio wake lock fallito",
+      "notInitialized": "Wake lock non inizializzato"
+    }
+  },
+  "theme": {
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema",
+    "switchToDark": "Passa alla modalità scura",
+    "switchToLight": "Passa alla modalità chiara",
+    "switchToSystem": "Passa alla modalità sistema",
+    "currentTheme": "Tema corrente: {{theme}}. Clicca per {{action}}"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "description": "Configura le preferenze e il comportamento del wake lock",
+    "autoDisable": {
+      "title": "Timer Auto-disattivazione",
+      "description": "Rilascia automaticamente il wake lock dopo una durata specificata",
+      "enable": "Abilita auto-disattivazione",
+      "duration": "Durata",
+      "willDisable": "Il wake lock verrà rilasciato automaticamente dopo {{duration}} minuti"
+    },
+    "battery": {
+      "title": "Ottimizzazione Batteria",
+      "description": "Riduci il consumo della batteria quando il wake lock è attivo",
+      "enable": "Abilita ottimizzazione batteria",
+      "reduces": "Riduce la luminosità dello schermo e disabilita funzionalità non necessarie"
+    },
+    "notifications": {
+      "title": "Notifiche e Feedback",
+      "description": "Configura come l'app fornisce feedback sullo stato del wake lock",
+      "enable": "Mostra notifiche",
+      "whenActivated": "Ricevi notifiche quando il wake lock viene attivato o disattivato"
+    },
+    "compatibility": {
+      "title": "Compatibilità Dispositivo",
+      "description": "Informazioni sul supporto wake lock sul tuo dispositivo",
+      "screenWakeLock": "Wake Lock Schermo:",
+      "systemWakeLock": "Wake Lock Sistema:",
+      "browser": "Browser:",
+      "platform": "Piattaforma:",
+      "supported": "Supportato",
+      "limited": "Limitato",
+      "chrome": "Chrome",
+      "desktop": "Desktop"
+    },
+    "advanced": {
+      "title": "Impostazioni Avanzate",
+      "description": "Opzioni sviluppatore e debug",
+      "debugMode": "Modalità debug",
+      "showTechnical": "Mostra informazioni tecniche aggiuntive e log"
+    },
+    "language": {
+      "title": "Lingua",
+      "description": "Scegli la tua lingua preferita",
+      "select": "Seleziona lingua"
+    }
+  },
+  "about": {
+    "title": "Informazioni su Awake Lock",
+    "description": "Mantieni il tuo dispositivo sveglio con la gestione intelligente del wake lock",
+    "whatIs": {
+      "title": "Cos'è Awake Lock?",
+      "description": "Awake Lock è un'applicazione web moderna che impedisce al tuo dispositivo di addormentarsi o spegnere lo schermo. È perfetta per presentazioni, lettura, monitoraggio dashboard o qualsiasi attività in cui devi mantenere il tuo schermo attivo.",
+      "features": {
+        "privacyFirst": "Privacy Prima",
+        "privacyDescription": "Nessuna raccolta dati",
+        "batteryAware": "Consapevole della Batteria",
+        "batteryDescription": "Ottimizzato per l'efficienza",
+        "crossPlatform": "Multi-piattaforma",
+        "crossPlatformDescription": "Funziona su tutti i dispositivi"
+      }
+    },
+    "features": {
+      "title": "Caratteristiche",
+      "screenWakeLock": {
+        "title": "Wake Lock Schermo",
+        "description": "Impedisce allo schermo di spegnersi"
+      },
+      "systemWakeLock": {
+        "title": "Wake Lock Sistema",
+        "description": "Mantiene l'intero dispositivo sveglio"
+      },
+      "intelligentFallbacks": {
+        "title": "Fallback Intelligenti",
+        "description": "Funziona sui browser più vecchi"
+      },
+      "batteryMonitoring": {
+        "title": "Monitoraggio Batteria",
+        "description": "Mostra il livello batteria corrente"
+      },
+      "sessionStats": {
+        "title": "Statistiche Sessione",
+        "description": "Traccia i pattern di utilizzo"
+      },
+      "themeSupport": {
+        "title": "Supporto Temi",
+        "description": "Temi chiaro, scuro e sistema"
+      }
+    },
+    "compatibility": {
+      "title": "Compatibilità Browser",
+      "description": "Supporto Wake Lock API tra diversi browser",
+      "chrome": "Chrome",
+      "firefox": "Firefox",
+      "safari": "Safari",
+      "edge": "Edge",
+      "fullSupport": "Supporto Completo",
+      "partial": "Parziale",
+      "fallbackNote": "Per i browser senza supporto nativo, l'app utilizza strategie di fallback intelligenti per mantenere la funzionalità."
+    },
+    "technical": {
+      "title": "Informazioni Tecniche",
+      "version": "Versione",
+      "builtWith": "Costruito con",
+      "wakeLockLibrary": "Libreria Wake Lock",
+      "uiFramework": "Framework UI"
+    },
+    "resources": {
+      "title": "Risorse",
+      "awakeLockLibrary": "Libreria Awake Lock",
+      "apiDocumentation": "Documentazione Screen Wake Lock API"
+    },
+    "privacy": {
+      "title": "Privacy e Sicurezza",
+      "noDataCollection": "Nessun dato personale viene raccolto o trasmesso",
+      "localProcessing": "Tutta l'elaborazione avviene localmente nel tuo browser",
+      "localStorage": "Le impostazioni sono memorizzate localmente usando lo storage del browser",
+      "noTracking": "Nessun tracciamento esterno o analytics"
+    }
+  },
+  "footer": {
+    "builtWith": "Costruito con React, TypeScript e la",
+    "awakeLockLibrary": "libreria awake-lock",
+    "by": "da"
+  },
+  "common": {
+    "close": "Chiudi",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "ok": "OK",
+    "yes": "Sì",
+    "no": "No",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "warning": "Avviso",
+    "info": "Info",
+    "minutes": "{{count}} minuto",
+    "minutes_other": "{{count}} minuti"
+  },
+  "themeDebug": {
+    "title": "Debug Tema",
+    "selectedTheme": "Tema Selezionato:",
+    "systemPreference": "Preferenza Sistema:",
+    "htmlClasses": "Classi HTML:",
+    "backgroundColor": "Colore Sfondo:",
+    "none": "nessuno",
+    "toggleShortcut": "Premi {{shortcut}} per attivare",
+    "show": "Mostra debug tema",
+    "hide": "Nascondi Debug",
+    "collapse": "Comprimi",
+    "expand": "Espandi"
+  },
+  "compatibility": {
+    "worksWith": "Funziona su browser moderni con supporto nativo Wake Lock API",
+    "browserList": "Compatibile con Chrome, Firefox, Safari ed Edge"
+  }
+}

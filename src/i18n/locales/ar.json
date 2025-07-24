@@ -1,0 +1,229 @@
+{
+  "app": {
+    "title": "قفل الاستيقاظ - حافظ على شاشتك مستيقظة",
+    "description": "منع جهازك من النوم بإدارة ذكية لقفل الاستيقاظ",
+    "tagline": "حافظ على شاشتك مستيقظة",
+    "subtitle": "منع جهازك من النوم بإدارة ذكية لقفل الاستيقاظ"
+  },
+  "header": {
+    "title": "قفل الاستيقاظ",
+    "settings": "الإعدادات",
+    "about": "حول"
+  },
+  "wakeLock": {
+    "title": "تحكم في قفل الاستيقاظ",
+    "description": "منع جهازك من النوم أو إطفاء الشاشة",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "screenAwake": "ستبقى الشاشة مستيقظة",
+    "sleepDisabled": "منع النوم معطل",
+    "toggleDescription": "تبديل لمنع جهازك من النوم",
+    "usingStrategy": "باستخدام استراتيجية قفل الاستيقاظ {{strategy}}",
+    "wakeLockTypes": {
+      "title": "نوع قفل الاستيقاظ",
+      "screen": "الشاشة فقط",
+      "system": "استيقاظ النظام",
+      "screenDescription": "قفل استيقاظ الشاشة يمنع الشاشة من الإطفاء.",
+      "systemDescription": "قفل استيقاظ النظام يمنع الجهاز بالكامل من النوم."
+    },
+    "session": {
+      "current": "الجلسة الحالية",
+      "total": "إجمالي الجلسات",
+      "duration": "{{minutes}}د {{seconds}}ث"
+    },
+    "battery": {
+      "level": "مستوى البطارية: {{level}}%",
+      "warning": "قد تستنزف أقفال الاستيقاظ البطارية بسرعة أكبر"
+    },
+    "details": {
+      "show": "إظهار التفاصيل",
+      "hide": "إخفاء التفاصيل",
+      "title": "التفاصيل التقنية",
+      "description": "معلومات متقدمة حول تنفيذ قفل الاستيقاظ",
+      "status": "الحالة",
+      "strategy": "الاستراتيجية",
+      "type": "النوع",
+      "browserSupport": "دعم المتصفح",
+      "supported": "مدعوم",
+      "notSupported": "غير مدعوم",
+      "nativeApi": "API أصلي",
+      "none": "لا شيء",
+      "sessionStats": "إحصائيات الجلسة",
+      "totalTime": "الوقت الإجمالي",
+      "averageSession": "متوسط الجلسة"
+    },
+    "errors": {
+      "notSupported": "قفل الاستيقاظ غير مدعوم",
+      "compatibilityIssue": "متصفحك أو جهازك لا يدعم وظيفة قفل الاستيقاظ.",
+      "tryDifferentBrowser": "تتطلب هذه الميزة متصفحاً حديثاً مع دعم Wake Lock API. يرجى المحاولة باستخدام Chrome أو Firefox أو Safari على جهاز مدعوم.",
+      "failed": "فشل في طلب قفل الاستيقاظ",
+      "releaseFailed": "فشل في تحرير قفل الاستيقاظ",
+      "notInitialized": "قفل الاستيقاظ غير مهيأ"
+    }
+  },
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "switchToDark": "التبديل إلى الوضع الداكن",
+    "switchToLight": "التبديل إلى الوضع الفاتح",
+    "switchToSystem": "التبديل إلى وضع النظام",
+    "currentTheme": "السمة الحالية: {{theme}}. انقر {{action}}"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "description": "تكوين تفضيلات وسلوك قفل الاستيقاظ",
+    "autoDisable": {
+      "title": "مؤقت الإيقاف التلقائي",
+      "description": "تحرير قفل الاستيقاظ تلقائياً بعد مدة محددة",
+      "enable": "تمكين الإيقاف التلقائي",
+      "duration": "المدة",
+      "willDisable": "سيتم تحرير قفل الاستيقاظ تلقائياً بعد {{duration}} دقيقة"
+    },
+    "battery": {
+      "title": "تحسين البطارية",
+      "description": "تقليل استهلاك البطارية عند تفعيل قفل الاستيقاظ",
+      "enable": "تمكين تحسين البطارية",
+      "reduces": "يقلل سطوع الشاشة ويعطل الميزات غير الضرورية"
+    },
+    "notifications": {
+      "title": "الإشعارات والملاحظات",
+      "description": "تكوين كيفية تقديم التطبيق للملاحظات حول حالة قفل الاستيقاظ",
+      "enable": "إظهار الإشعارات",
+      "whenActivated": "احصل على إشعار عند تفعيل أو إلغاء تفعيل قفل الاستيقاظ"
+    },
+    "compatibility": {
+      "title": "توافق الجهاز",
+      "description": "معلومات حول دعم قفل الاستيقاظ على جهازك",
+      "screenWakeLock": "قفل استيقاظ الشاشة:",
+      "systemWakeLock": "قفل استيقاظ النظام:",
+      "browser": "المتصفح:",
+      "platform": "المنصة:",
+      "supported": "مدعوم",
+      "limited": "محدود",
+      "chrome": "Chrome",
+      "desktop": "سطح المكتب"
+    },
+    "advanced": {
+      "title": "الإعدادات المتقدمة",
+      "description": "خيارات المطور وإزالة الأخطاء",
+      "debugMode": "وضع إزالة الأخطاء",
+      "showTechnical": "إظهار معلومات تقنية إضافية والسجلات"
+    },
+    "language": {
+      "title": "اللغة",
+      "description": "اختر لغتك المفضلة",
+      "select": "اختر اللغة"
+    }
+  },
+  "about": {
+    "title": "حول قفل الاستيقاظ",
+    "description": "حافظ على جهازك مستيقظاً بإدارة ذكية لقفل الاستيقاظ",
+    "whatIs": {
+      "title": "ما هو قفل الاستيقاظ؟",
+      "description": "قفل الاستيقاظ هو تطبيق ويب حديث يمنع جهازك من النوم أو إطفاء الشاشة. إنه مثالي للعروض التقديمية والقراءة ومراقبة لوحات المعلومات أو أي نشاط تحتاج فيه للحفاظ على شاشتك نشطة.",
+      "features": {
+        "privacyFirst": "الخصوصية أولاً",
+        "privacyDescription": "لا يوجد جمع للبيانات",
+        "batteryAware": "واعي بالبطارية",
+        "batteryDescription": "محسن للكفاءة",
+        "crossPlatform": "عبر المنصات",
+        "crossPlatformDescription": "يعمل على جميع الأجهزة"
+      }
+    },
+    "features": {
+      "title": "الميزات",
+      "screenWakeLock": {
+        "title": "قفل استيقاظ الشاشة",
+        "description": "يمنع الشاشة من الإطفاء"
+      },
+      "systemWakeLock": {
+        "title": "قفل استيقاظ النظام",
+        "description": "يحافظ على الجهاز بالكامل مستيقظاً"
+      },
+      "intelligentFallbacks": {
+        "title": "بدائل ذكية",
+        "description": "يعمل على المتصفحات القديمة"
+      },
+      "batteryMonitoring": {
+        "title": "مراقبة البطارية",
+        "description": "يظهر مستوى البطارية الحالي"
+      },
+      "sessionStats": {
+        "title": "إحصائيات الجلسة",
+        "description": "تتبع أنماط الاستخدام"
+      },
+      "themeSupport": {
+        "title": "دعم السمات",
+        "description": "سمات فاتحة وداكنة ونظام"
+      }
+    },
+    "compatibility": {
+      "title": "توافق المتصفح",
+      "description": "دعم Wake Lock API عبر متصفحات مختلفة",
+      "chrome": "Chrome",
+      "firefox": "Firefox",
+      "safari": "Safari",
+      "edge": "Edge",
+      "fullSupport": "دعم كامل",
+      "partial": "جزئي",
+      "fallbackNote": "للمتصفحات بدون دعم أصلي، يستخدم التطبيق استراتيجيات بديلة ذكية للحفاظ على الوظيفة."
+    },
+    "technical": {
+      "title": "المعلومات التقنية",
+      "version": "الإصدار",
+      "builtWith": "مبني بـ",
+      "wakeLockLibrary": "مكتبة قفل الاستيقاظ",
+      "uiFramework": "إطار عمل واجهة المستخدم"
+    },
+    "resources": {
+      "title": "الموارد",
+      "awakeLockLibrary": "مكتبة قفل الاستيقاظ",
+      "apiDocumentation": "توثيق Screen Wake Lock API"
+    },
+    "privacy": {
+      "title": "الخصوصية والأمان",
+      "noDataCollection": "لا يتم جمع أو إرسال أي بيانات شخصية",
+      "localProcessing": "جميع المعالجات تحدث محلياً في متصفحك",
+      "localStorage": "يتم تخزين الإعدادات محلياً باستخدام تخزين المتصفح",
+      "noTracking": "لا يوجد تتبع خارجي أو تحليلات"
+    }
+  },
+  "footer": {
+    "builtWith": "مبني بـ React و TypeScript و",
+    "awakeLockLibrary": "مكتبة awake-lock",
+    "by": "بواسطة"
+  },
+  "common": {
+    "close": "إغلاق",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "ok": "موافق",
+    "yes": "نعم",
+    "no": "لا",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "warning": "تحذير",
+    "info": "معلومات",
+    "minutes": "{{count}} دقيقة",
+    "minutes_other": "{{count}} دقيقة"
+  },
+  "themeDebug": {
+    "title": "تصحيح السمة",
+    "selectedTheme": "السمة المحددة:",
+    "systemPreference": "تفضيل النظام:",
+    "htmlClasses": "فئات HTML:",
+    "backgroundColor": "لون الخلفية:",
+    "none": "لا شيء",
+    "toggleShortcut": "اضغط {{shortcut}} للتبديل",
+    "show": "إظهار تصحيح السمة",
+    "hide": "إخفاء التصحيح",
+    "collapse": "طي",
+    "expand": "توسيع"
+  },
+  "compatibility": {
+    "worksWith": "يعمل على المتصفحات الحديثة مع دعم Wake Lock API الأصلي",
+    "browserList": "متوافق مع Chrome و Firefox و Safari و Edge"
+  }
+}

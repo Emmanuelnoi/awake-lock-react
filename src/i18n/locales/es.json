@@ -1,0 +1,172 @@
+{
+  "app": {
+    "title": "Awake Lock - Mantén tu Pantalla Activa",
+    "description": "Evita que tu dispositivo entre en suspensión con gestión inteligente de bloqueo de suspensión",
+    "tagline": "Mantén tu Pantalla Activa",
+    "subtitle": "Evita que tu dispositivo entre en suspensión con gestión inteligente de bloqueo de suspensión"
+  },
+  "header": {
+    "title": "Awake Lock",
+    "settings": "Configuración",
+    "about": "Acerca de"
+  },
+  "wakeLock": {
+    "title": "Control de Bloqueo de Suspensión",
+    "description": "Evita que tu dispositivo entre en suspensión o apague la pantalla",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "screenAwake": "La pantalla se mantendrá activa",
+    "sleepDisabled": "Prevención de suspensión deshabilitada",
+    "toggleDescription": "Alternar para evitar que tu dispositivo entre en suspensión",
+    "usingStrategy": "Usando estrategia de bloqueo de suspensión {{strategy}}",
+    "wakeLockTypes": {
+      "title": "Tipo de Bloqueo de Suspensión",
+      "screen": "Solo Pantalla",
+      "system": "Suspensión del Sistema",
+      "screenDescription": "El bloqueo de pantalla evita que la pantalla se apague.",
+      "systemDescription": "El bloqueo del sistema evita que todo el dispositivo entre en suspensión."
+    },
+    "session": {
+      "current": "Sesión Actual",
+      "total": "Total de Sesiones",
+      "duration": "{{minutes}}m {{seconds}}s"
+    },
+    "battery": {
+      "level": "Nivel de Batería: {{level}}%",
+      "warning": "Los bloqueos de suspensión pueden agotar la batería más rápido"
+    },
+    "details": {
+      "show": "Mostrar Detalles",
+      "hide": "Ocultar Detalles",
+      "title": "Detalles Técnicos",
+      "description": "Información avanzada sobre la implementación del bloqueo de suspensión",
+      "status": "Estado",
+      "strategy": "Estrategia",
+      "type": "Tipo",
+      "browserSupport": "Soporte del Navegador",
+      "supported": "Soportado",
+      "notSupported": "No Soportado",
+      "nativeApi": "API Nativa",
+      "none": "Ninguno",
+      "sessionStats": "Estadísticas de Sesión",
+      "totalTime": "Tiempo Total",
+      "averageSession": "Sesión Promedio"
+    },
+    "errors": {
+      "notSupported": "Bloqueo de Suspensión No Soportado",
+      "compatibilityIssue": "Tu navegador o dispositivo no soporta la funcionalidad de bloqueo de suspensión.",
+      "tryDifferentBrowser": "Esta función requiere un navegador moderno con soporte para la API de Bloqueo de Suspensión. Intenta usar Chrome, Firefox o Safari en un dispositivo soportado.",
+      "failed": "Error al solicitar bloqueo de suspensión",
+      "releaseFailed": "Error al liberar bloqueo de suspensión",
+      "notInitialized": "Bloqueo de suspensión no inicializado"
+    }
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "switchToDark": "Cambiar a modo oscuro",
+    "switchToLight": "Cambiar a modo claro",
+    "switchToSystem": "Cambiar a modo sistema",
+    "currentTheme": "Tema actual: {{theme}}. Clic para {{action}}"
+  },
+  "settings": {
+    "title": "Configuración",
+    "description": "Configurar preferencias y comportamiento del bloqueo de suspensión",
+    "autoDisable": {
+      "title": "Temporizador de Auto-deshabilitación",
+      "description": "Liberar automáticamente el bloqueo de suspensión después de una duración especificada",
+      "enable": "Habilitar auto-deshabilitación",
+      "duration": "Duración",
+      "willDisable": "El bloqueo de suspensión se liberará automáticamente después de {{duration}} minutos"
+    },
+    "battery": {
+      "title": "Optimización de Batería",
+      "description": "Reducir el consumo de batería cuando el bloqueo de suspensión está activo",
+      "enable": "Habilitar optimización de batería",
+      "reduces": "Reduce el brillo de la pantalla y deshabilita funciones innecesarias"
+    },
+    "notifications": {
+      "title": "Notificaciones y Comentarios",
+      "description": "Configurar cómo la aplicación proporciona comentarios sobre el estado del bloqueo de suspensión",
+      "enable": "Mostrar notificaciones",
+      "whenActivated": "Recibir notificaciones cuando el bloqueo de suspensión se active o desactive"
+    },
+    "compatibility": {
+      "title": "Compatibilidad del Dispositivo",
+      "description": "Información sobre el soporte de bloqueo de suspensión en tu dispositivo",
+      "screenWakeLock": "Bloqueo de Pantalla:",
+      "systemWakeLock": "Bloqueo del Sistema:",
+      "browser": "Navegador:",
+      "platform": "Plataforma:",
+      "supported": "Soportado",
+      "limited": "Limitado",
+      "chrome": "Chrome",
+      "desktop": "Escritorio"
+    },
+    "advanced": {
+      "title": "Configuración Avanzada",
+      "description": "Opciones de desarrollador y depuración",
+      "debugMode": "Modo de depuración",
+      "showTechnical": "Mostrar información técnica adicional y registros"
+    },
+    "language": {
+      "title": "Idioma",
+      "description": "Elige tu idioma preferido",
+      "select": "Seleccionar idioma"
+    }
+  },
+  "about": {
+    "title": "Acerca de Awake Lock",
+    "description": "Mantén tu dispositivo activo con gestión inteligente de bloqueo de suspensión",
+    "whatIs": {
+      "title": "¿Qué es Awake Lock?",
+      "description": "Awake Lock es una aplicación web moderna que evita que tu dispositivo entre en suspensión o apague la pantalla. Es perfecto para presentaciones, lectura, monitoreo de paneles, o cualquier actividad donde necesites mantener tu pantalla activa.",
+      "features": {
+        "privacyFirst": "Privacidad Primero",
+        "privacyDescription": "Sin recopilación de datos",
+        "batteryAware": "Consciente de la Batería",
+        "batteryDescription": "Optimizado para eficiencia",
+        "crossPlatform": "Multiplataforma",
+        "crossPlatformDescription": "Funciona en todos los dispositivos"
+      }
+    }
+  },
+  "footer": {
+    "builtWith": "Construido con React, TypeScript, y la",
+    "awakeLockLibrary": "librería awake-lock",
+    "by": "por"
+  },
+  "common": {
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "ok": "Aceptar",
+    "yes": "Sí",
+    "no": "No",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información",
+    "minutes": "{{count}} minuto",
+    "minutes_other": "{{count}} minutos"
+  },
+  "themeDebug": {
+    "title": "Depuración de Tema",
+    "selectedTheme": "Tema Seleccionado:",
+    "systemPreference": "Preferencia del Sistema:",
+    "htmlClasses": "Clases HTML:",
+    "backgroundColor": "Color de Fondo:",
+    "none": "ninguno",
+    "toggleShortcut": "Presiona {{shortcut}} para alternar",
+    "show": "Mostrar depuración de tema",
+    "hide": "Ocultar Depuración",
+    "collapse": "Contraer",
+    "expand": "Expandir"
+  },
+  "compatibility": {
+    "worksWith": "Funciona en navegadores modernos con soporte nativo de la API Wake Lock",
+    "browserList": "Compatible con Chrome, Firefox, Safari y Edge"
+  }
+}

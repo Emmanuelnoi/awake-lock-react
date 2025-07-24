@@ -1,0 +1,128 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Test & Quality Checks
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run TypeScript check
+        run: npx tsc --noEmit
+
+      - name: Run tests
+        run: npm run test:run
+
+      - name: Build application
+        run: npm run build
+
+      - name: Upload build artifacts
+        if: matrix.node-version == '20.x'
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: dist/
+          retention-days: 30
+
+  security:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run security audit
+        run: npm audit
+
+      - name: Check for vulnerabilities
+        run: npm audit --audit-level high
+
+  build-size:
+    name: Bundle Size Analysis
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build for production
+        run: npm run build
+
+      - name: Analyze bundle size
+        run: |
+          echo "## Bundle Size Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "| File | Size | Gzipped |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------|---------|" >> $GITHUB_STEP_SUMMARY
+          
+          find dist -name "*.js" -o -name "*.css" | while read file; do
+            original_size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file")
+            gzipped_size=$(gzip -c "$file" | wc -c)
+            filename=$(basename "$file")
+            echo "| $filename | ${original_size} bytes | ${gzipped_size} bytes |" >> $GITHUB_STEP_SUMMARY
+          done
+
+      - name: Check bundle size limits
+        run: |
+          MAX_JS_SIZE=500000  # 500KB
+          MAX_CSS_SIZE=50000  # 50KB
+          
+          js_size=$(find dist -name "*.js" -exec stat -f%z {} \; 2>/dev/null || find dist -name "*.js" -exec stat -c%s {} \; | awk '{sum+=$1} END {print sum}')
+          css_size=$(find dist -name "*.css" -exec stat -f%z {} \; 2>/dev/null || find dist -name "*.css" -exec stat -c%s {} \; | awk '{sum+=$1} END {print sum}')
+          
+          echo "JavaScript bundle size: ${js_size} bytes"
+          echo "CSS bundle size: ${css_size} bytes"
+          
+          if [ "$js_size" -gt "$MAX_JS_SIZE" ]; then
+            echo "❌ JavaScript bundle size exceeds limit (${js_size} > ${MAX_JS_SIZE})"
+            exit 1
+          fi
+          
+          if [ "$css_size" -gt "$MAX_CSS_SIZE" ]; then
+            echo "❌ CSS bundle size exceeds limit (${css_size} > ${MAX_CSS_SIZE})"
+            exit 1
+          fi
+          
+          echo "✅ Bundle sizes are within limits"
